@@ -26,6 +26,15 @@ $student1 = 'taro';
 $student2 = 'jiro';
 $student3 = 'hanako';
 
+function tenko($student, $is_absent=false) {
+  $student = [$student1,$student2,$student3]
+}
+
+$result = sum($student);
+echo "{$student}は出席しています。<br>";
+$result = sum($student);
+echo "{$student}は出席しています。";
+
 /**
  * 問２：カウンター関数(counter)
  * 
