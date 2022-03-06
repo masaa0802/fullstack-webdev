@@ -23,17 +23,25 @@
  */
 
 $student1 = 'taro';
+tenko($student1);
 $student2 = 'jiro';
+tenko($student2, true);
 $student3 = 'hanako';
+tenko($student3);
 
-function tenko($student, $is_absent=false) {
-  $student = [$student1,$student2,$student3]
+
+function tenko($student,$is_absent=false) {
+
+    if ($is_absent) {
+      echo $student . 'は欠席しています。<br>';
+    }else {
+      echo $student . 'は出席しています。<br>';
+    }
 }
 
-$result = sum($student);
-echo "{$student}は出席しています。<br>";
-$result = sum($student);
-echo "{$student}は出席しています。";
+
+
+
 
 /**
  * 問２：カウンター関数(counter)
@@ -51,3 +59,11 @@ echo "{$student}は出席しています。";
  */
 
 $num = 0; 
+function counter($step=1){
+  global $num;
+  $num += $step;
+  echo $num;
+  return $num;
+}
+
+counter();

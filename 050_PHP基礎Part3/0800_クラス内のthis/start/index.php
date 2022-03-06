@@ -12,8 +12,17 @@ class Person
 
     function hello() {
         echo 'hello, ' . $this->name;
+        return $this;
     }
+    function bye() {
+        echo 'bye,' . $this->name;
+        return $this;
+    }
+    
 }
 
 $bob = new Person('Bob', 18);
-$bob->hello();
+$bob->hello()->bye();
+
+// $bob = new Person('Tim', 23);
+// echo $tim->hello();

@@ -8,3 +8,12 @@
 $arry = [
     'num' => 0
 ];
+
+require 'file.php';
+// require('file1.php');
+// require('file1.php');
+// require_once('file2.php');
+// require_once('file2.php');
+// require_once('file2.php');
+// fn1();
+echo $arry['num'];
